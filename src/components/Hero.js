@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import TickerPrices from './TickerPrices'
 import FetchPrice from './FetchPrice'
+import LeverageCalculator from './LeverageCalculator'
 const Container = styled.div`
  display: flex;
  flex-direction: column;
@@ -62,7 +63,7 @@ const Section = styled.section`
 const Article = styled.article`
  background-color: #f8f8f8;
 
- height: 30vh;
+ height: 65vh;
  width: 100%;
 `
 const Footer = styled.footer`
@@ -110,7 +111,10 @@ function Hero() {
     <h2>About Me</h2>
     <FetchPrice />
    </Article>
-
+   <Article>
+    <h2>About Me</h2>
+    <LeverageCalculator />
+   </Article>
    <Footer>
     <p>&copy; 2023 My Website</p>
    </Footer>
