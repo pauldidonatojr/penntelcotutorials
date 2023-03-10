@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import TickerPrices from './TickerPrices'
+import FetchPrice from './FetchPrice'
 const Container = styled.div`
  display: flex;
  flex-direction: column;
@@ -33,8 +34,6 @@ const NavLinks = styled.ul`
  margin: 0;
  padding: 0;
  list-style-type: none;
-
-
 `
 
 const NavItem = styled.li`
@@ -48,17 +47,17 @@ const NavLink = styled.a`
 `
 
 const Main = styled.main`
- height: 30vh;
+ height: 100%;
  width: 100%;
  background-color: lightgray;
+ overflow-y: scroll;
 `
 
 const Section = styled.section`
- background-color: #f8f8f8;
-
-
- height: 30vh;
+ height: 100%;
  width: 100%;
+ background-color: lightgray;
+ overflow-y: scroll;
 `
 const Article = styled.article`
  background-color: #f8f8f8;
@@ -72,7 +71,7 @@ const Footer = styled.footer`
 
  text-align: center;
  bottom: 0;
-width: 100%;
+ width: 100%;
 `
 
 function Hero() {
@@ -97,23 +96,19 @@ function Hero() {
 
    <Main>
     <h1>Welcome to my website</h1>
-    <p>Explore my portfolio and blog</p>
+    <TickerPrices />
    </Main>
 
-   <Section>
+   {/* <Section>
     <h2>About Me</h2>
-    <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu elit ac
-     elit malesuada lobortis.
-    </p>
-   </Section>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sunt voluptas
+    ut temporibus aliquam esse quaerat voluptatum aliquid perferendis est,
+    repellendus quia ea eveniet eos iusto ipsum deleniti. Tenetur, alias.
+   </Section> */}
 
    <Article>
     <h2>About Me</h2>
-    <p>
-     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu elit ac
-     elit malesuada lobortis.
-    </p>
+    <FetchPrice />
    </Article>
 
    <Footer>
