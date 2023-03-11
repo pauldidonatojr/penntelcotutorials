@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const TickerPrices = () => {
  const [prices, setPrices] = useState({})
- const symbols = ['OP-USDT', 'BTC-USDT', 'APT-USDT']
+ const symbols = ['OP-USDT', 'BTC-USDT', 'APT-USDT', 'FXS-USDT', 'MKR-USDT']
  const [refreshKey, setRefreshKey] = useState(Date.now())
 
  useEffect(() => {
