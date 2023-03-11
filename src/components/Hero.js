@@ -80,7 +80,7 @@ function Hero() {
  return (
   <Container>
    <Header>
-    <h2>My Website</h2>
+    <h2>Margoitti Law</h2>
 
     <Nav>
      <NavLinks>
@@ -98,8 +98,8 @@ function Hero() {
    </Header>
 
    <Main>
-    <h1>Welcome to my website</h1>
-    <TickerPrices />
+    {/* <h1>Welcome to my website</h1> */}
+    {/* <TickerPrices /> */}
     <NewsApi />
    </Main>
 
