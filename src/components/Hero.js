@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import TickerPrices from './TickerPrices'
 import FetchPrice from './FetchPrice'
 import LeverageCalculator from './LeverageCalculator'
+import NewsApi from './NewsApi'
 const Container = styled.div`
  display: flex;
  flex-direction: column;
@@ -63,7 +64,7 @@ const Section = styled.section`
 const Article = styled.article`
  background-color: #f8f8f8;
 
- height: 65vh;
+ height: 30vh;
  width: 100%;
 `
 const Footer = styled.footer`
@@ -80,6 +81,7 @@ function Hero() {
   <Container>
    <Header>
     <h2>My Website</h2>
+
     <Nav>
      <NavLinks>
       <NavItem>
@@ -97,7 +99,8 @@ function Hero() {
 
    <Main>
     <h1>Welcome to my website</h1>
-    <TickerPrices />
+    {/* <TickerPrices /> */}
+    <NewsApi />
    </Main>
 
    {/* <Section>
@@ -106,7 +109,7 @@ function Hero() {
     ut temporibus aliquam esse quaerat voluptatum aliquid perferendis est,
     repellendus quia ea eveniet eos iusto ipsum deleniti. Tenetur, alias.
    </Section> */}
-
+{/* 
    <Article>
     <h2>About Me</h2>
     <FetchPrice />
@@ -114,7 +117,7 @@ function Hero() {
    <Article>
     <h2>About Me</h2>
     <LeverageCalculator />
-   </Article>
+   </Article> */}
    <Footer>
     <p>&copy; 2023 My Website</p>
    </Footer>
