@@ -109,7 +109,7 @@ function Hero() {
     ut temporibus aliquam esse quaerat voluptatum aliquid perferendis est,
     repellendus quia ea eveniet eos iusto ipsum deleniti. Tenetur, alias.
    </Section> */}
-{/* 
+   {/*
    <Article>
     <h2>About Me</h2>
     <FetchPrice />
