@@ -1,76 +1,33 @@
 import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
 
-const ArticleList = styled.ul`
- list-style: none;
- padding: 0;
-`
-
-const ArticleItem = styled.li`
- margin-bottom: 20px;
-`
-
-const ArticleTitle = styled.h3`
- margin-top: 0;
- margin-bottom: 10px;
-`
-
-const ArticleDescription = styled.p`
- margin-top: 0;
- margin-bottom: 10px;
- font-size: 16px;
-`
-
-const ArticleImage = styled.img`
- width: 100%;
- height: auto;
- margin-bottom: 10px;
-`
-
-function NewsComponent() {
+function ArticleList() {
  const [articles, setArticles] = useState([])
 
  useEffect(() => {
-  const fetchArticles = async () => {
+  async function fetchData() {
    const url =
-    'https://api.bing.microsoft.com/v7.0/news/search?q=Philadelphia%20police%20reports%20OR%20traffic%20incidents&count=10&offset=0&mkt=en-US&freshness=Day&sortby=Date&dateRestrict=m30'
-   const response = await fetch(url, {
-    headers: {
-     'Ocp-Apim-Subscription-Key': '8f6f9732b7324505b2b5db25a9d9193a',
-    },
-   })
+    'https://newsapi.org/v2/everything?q=Philadelphia%20police%20reports%20OR%20traffic%20violations%20OR%20car%20accidents%20OR%20cars%20on%20fire&apiKey=54f462522a794f04816f6046782b9905'
+   const response = await fetch(url)
    const data = await response.json()
-   setArticles(data.value)
+   setArticles(data.articles)
   }
-  fetchArticles()
+  fetchData()
  }, [])
 
  return (
   <div>
-   <h2>
-    News Articles: Police Reports and Traffic Incidents in Philadelphia (last 30
-    days)
-   </h2>
-   <ArticleList>
+   <h2>Articles</h2>
+   <ul>
     {articles.map((article) => (
-     <ArticleItem key={article.url}>
-      <ArticleTitle>
-       <a href={article.url} target="_blank" rel="noopener noreferrer">
-        {article.name}
-       </a>
-      </ArticleTitle>
-      {/* {article.image && (
-       <ArticleImage
-        src={article.image.thumbnail.contentUrl}
-        alt={article.name}
-       />
-      )} */}
-      <ArticleDescription>{article.description}</ArticleDescription>
-     </ArticleItem>
+     <li key={article.url}>
+      <a href={article.url} target="_blank" rel="noopener noreferrer">
+       {article.title}
+      </a>
+     </li>
     ))}
-   </ArticleList>
+   </ul>
   </div>
  )
 }
 
-export default NewsComponent
+export default ArticleList
