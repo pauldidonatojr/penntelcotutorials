@@ -99,7 +99,7 @@ function Hero() {
 
    <Main>
     <h1>Welcome to my website</h1>
-    {/* <TickerPrices /> */}
+    <TickerPrices />
     <NewsApi />
    </Main>
 
@@ -108,7 +108,7 @@ function Hero() {
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sunt voluptas
     ut temporibus aliquam esse quaerat voluptatum aliquid perferendis est,
     repellendus quia ea eveniet eos iusto ipsum deleniti. Tenetur, alias.
-   </Section> */}
+   </Section>
    {/*
    <Article>
     <h2>About Me</h2>

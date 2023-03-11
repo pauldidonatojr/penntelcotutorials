@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 const NewsWrapper = styled.div`
  max-width: 800px;
  margin: 0 auto;
