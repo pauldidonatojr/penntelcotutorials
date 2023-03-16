@@ -108,7 +108,6 @@ const NavContainer = styled.div`
  @media screen and (min-width: 800px) {
   .nav-center {
 
-   background-color: beige;
    margin: 0 auto;
    display: flex;
    align-items: center;
@@ -117,7 +116,7 @@ const NavContainer = styled.div`
   }
   .nav-header {
    padding: 0;
-  
+
    display: flex;
    justify-content: center;
    align-items: center;

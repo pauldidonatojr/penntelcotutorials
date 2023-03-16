@@ -109,7 +109,6 @@ const Wrapper = styled.div`
  /* Medium devices (tablets, 768px and below) */
  @media only screen and (min-width: 577px) and (max-width: 768px) {
   .box {
-   background-color: lightblue;
   }
 
   .content {
@@ -201,7 +200,7 @@ const handleClick = (e) => {
        <PdfContainer>
         <CloseButton onClick={() => setShowOverlay(false)}>Close</CloseButton>
         <iframe src={pdfUrl} width="100%" height="100%" title="pdf-iframe" />
-      
+
        </PdfContainer>
       </Overlay>
      )}
