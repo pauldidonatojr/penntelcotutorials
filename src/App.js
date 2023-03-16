@@ -1,5 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import './index.css'
+
 import { Home } from './pages/Index.js'
 
 function App() {

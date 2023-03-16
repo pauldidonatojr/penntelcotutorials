@@ -156,26 +156,7 @@ p {
 Stripe Styles
 ===============
 */
-.nav {
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  position: relative;
-  z-index: 1;
-}
 
-.nav-center {
-  width: 90vw;
-  max-width: var(--max-width);
-}
-
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .btn {
   font-size: 1rem;
@@ -192,9 +173,6 @@ Stripe Styles
   background: var(--clr-grey-5);
 }
 
-.nav-links {
-  display: none;
-}
 
 .signin-btn {
   display: none;
@@ -207,7 +185,7 @@ Stripe Styles
   height: 65%;
   top: 0;
   left: 0;
-  background: url(./images/hero.svg);
+
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
@@ -245,7 +223,7 @@ Stripe Styles
 }
 
 /* nav media query */
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -285,7 +263,7 @@ Stripe Styles
     letter-spacing: 1px;
     width: 10rem;
   }
-}
+} */
 
 /* hero media query */
 @media screen and (min-width: 800px) {
