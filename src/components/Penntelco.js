@@ -155,8 +155,7 @@ function PennTelco() {
  const [showOverlay2, setShowOverlay2] = useState(false)
  const [pdfUrl, setPdfUrl] = useState('')
 
-
-const handleClick = (e) => {
+ const handleClick = (e) => {
   e.preventDefault()
   setShowOverlay(true)
   setPdfUrl(e.target.href)
@@ -200,7 +199,6 @@ const handleClick = (e) => {
        <PdfContainer>
         <CloseButton onClick={() => setShowOverlay(false)}>Close</CloseButton>
         <iframe src={pdfUrl} width="100%" height="100%" title="pdf-iframe" />
-
        </PdfContainer>
       </Overlay>
      )}
@@ -218,7 +216,6 @@ const handleClick = (e) => {
        </Overlay2>
       )}
       <br />
-
       <Link
        href="https://www.penntelco.com/downloads/How%20to%20install%20Sangoma%20Connect%20Mobile.pdf"
        onClick={handleClick}
@@ -227,17 +224,25 @@ const handleClick = (e) => {
       </Link>
       <br />
       <Link
+       href="https://www.penntelco.com/downloads/How%20to%20install%20Sangoma%20Connect%20Desktop.pdf"
        onClick={handleClick}
       >
        Installing Sangoma Phone (desktop)
       </Link>
-
       <br />
       <Link
-       href="downloads/PTC_ZoiperConfiguration-ANDROID.pdf"
+       href="https://www.penntelco.com/downloads/How%20To%20Call%20Internationally.pdf"
        onClick={handleClick}
       >
-       Video Guides
+       Calling Internationally
+      </Link>
+      <Link
+       href=" https://www.penntelco.com/downloads/sangomavid.webm"
+       onClick={handleClick}
+      >
+       {' '}
+       <br />
+       Video for Sangoma Phone Desktop
       </Link>
 
       <br />
