@@ -9,7 +9,6 @@ const Container = styled.div`
  display: flex;
  flex-direction: column;
 
- background-color: lightblue;
 `
 
 const HeaderContainer = styled.div`
@@ -59,7 +58,6 @@ const NavContainer = styled.div`
   align-items: center;
   justify-content: center;
 
- background-color: lightblue;
   width: 45vh;
  }
  .nav-toggle {
@@ -99,7 +97,6 @@ const NavContainer = styled.div`
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  background-color: lightblue;
  }
  .show-container {
   height: 10rem;
