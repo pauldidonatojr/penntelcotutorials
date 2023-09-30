@@ -164,6 +164,11 @@ function PennTelco() {
   setShowOverlay2(true)
  }
  const handleConfirmDownload = () => {
+  window.location.href =
+   'https://github.com/sangoma/desktop-softphone/releases/download/v3.9.1/Sangoma-Phone-3.9.1-win-x64.exe'
+  setShowOverlay2(false)
+ }
+ const handleConfirmDownloadx = () => {
   window.location.href = 'https://nc.richmondtt.com/index.php/s/N87dAo4nEpz5yLj'
   setShowOverlay2(false)
  }
@@ -205,6 +210,7 @@ function PennTelco() {
       <DownloadLink onClick={handleDownloadClick}>
        Download Softphone
       </DownloadLink>
+      <button onClick={handleConfirmDownloadx}>Remote Sessions</button>
       {showOverlay2 && (
        <Overlay2>
         <Modal>
@@ -214,6 +220,7 @@ function PennTelco() {
         </Modal>
        </Overlay2>
       )}
+
       <br />
       <Link
        href="https://www.penntelco.com/downloads/How%20to%20install%20Sangoma%20Connect%20Mobile.pdf"
